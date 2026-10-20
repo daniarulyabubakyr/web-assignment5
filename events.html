@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | JavaScript Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a class="site-name" href="index.html">JS Basics<span>Assignment #5</span></a>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Introduction</a>
+                <a href="dom.html">DOM</a>
+                <a href="events.html" aria-current="page">Events</a>
+                <a href="calculator.html">Calculator</a>
+                <a href="todo.html">To-Do List</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-heading">
+            <h1>Mouse &amp; Keyboard Events</h1>
+            <p>Make the page respond to your mouse and keyboard.</p>
+        </div>
+        <section class="card" aria-labelledby="task-five">
+            <h2 id="task-five">Task 5 — Mouse Events</h2>
+            <p>Move your mouse over the box to change its color. Move away to restore it.</p>
+            <div id="mouse-box" tabindex="0">Hover over me</div>
+            <p class="hint">You can also focus the box with Tab, or touch and hold it on a phone.</p>
+        </section>
+
+        <section class="card" aria-labelledby="task-six">
+            <h2 id="task-six">Task 6 — Keyboard Events</h2>
+            <p>The text below updates as you type using the keyup event.</p>
+            <label for="keyboard-input">Type something</label>
+            <input id="keyboard-input" type="text" placeholder="Hello, JavaScript!" autocomplete="off">
+            <div class="demo-area">
+                <strong>You typed:</strong>
+                <p id="keyboard-output" aria-live="polite">Your text will appear here.</p>
+            </div>
+        </section>
+        <div class="next-page"><a href="calculator.html">Next: Calculator →</a></div>
+    </main>
+
+    <footer>Assignment #5 · JavaScript Basics · HTML, CSS &amp; JavaScript</footer>
+</body>
+</html>

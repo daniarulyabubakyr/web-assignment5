@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation | JavaScript Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a class="site-name" href="index.html">JS Basics<span>Assignment #5</span></a>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Introduction</a>
+                <a href="dom.html" aria-current="page">DOM</a>
+                <a href="events.html">Events</a>
+                <a href="calculator.html">Calculator</a>
+                <a href="todo.html">To-Do List</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-heading">
+            <h1>DOM Manipulation</h1>
+            <p>Use JavaScript to change what is on the page.</p>
+        </div>
+        <section class="card" aria-labelledby="task-two">
+            <h2 id="task-two">Task 2 — Changing Content</h2>
+            <p>Click the button to replace the paragraph below.</p>
+            <p class="demo-area" id="changing-text" aria-live="polite">This is the original paragraph.</p>
+            <button id="change-text" type="button">Change Text</button>
+        </section>
+
+        <section class="card" aria-labelledby="task-three">
+            <h2 id="task-three">Task 3 — Changing Styles</h2>
+            <p>Change the background color or make the text larger. Click again to restore it.</p>
+            <div class="demo-area" id="style-box">JavaScript can change my style!</div>
+            <div class="button-row">
+                <button id="change-color" type="button">Change Color</button>
+                <button id="change-size" type="button">Change Font Size</button>
+            </div>
+        </section>
+
+        <section class="card" aria-labelledby="task-four">
+            <h2 id="task-four">Task 4 — Creating &amp; Removing Elements</h2>
+            <p>Add a new list item or remove the last one.</p>
+            <ul id="item-list" class="item-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <p id="item-message" class="hint" role="status">3 items in the list.</p>
+            <div class="button-row">
+                <button id="add-item" type="button">Add Item</button>
+                <button id="remove-item" class="secondary-button" type="button">Remove Item</button>
+            </div>
+        </section>
+        <div class="next-page"><a href="events.html">Next: Events →</a></div>
+    </main>
+
+    <footer>Assignment #5 · JavaScript Basics · HTML, CSS &amp; JavaScript</footer>
+</body>
+</html>

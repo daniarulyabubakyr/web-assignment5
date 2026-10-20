@@ -1,0 +1,443 @@
+/* Shared layout and colors for all five pages. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #253247;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dce3ed;
+}
+
+.header-content {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 22px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+a {
+    color: #245dc1;
+    text-underline-offset: 4px;
+}
+
+.site-name {
+    color: #253247;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.3;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.site-name span {
+    display: block;
+    margin-top: 4px;
+    color: #5e6a7c;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+nav a {
+    padding: 9px 12px;
+    color: #4e5d72;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    background-color: #eaf1ff;
+    color: #245dc1;
+}
+
+nav a[aria-current="page"] {
+    font-weight: bold;
+}
+
+main {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 44px 24px;
+    min-height: calc(100vh - 190px);
+}
+
+.page-heading {
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    line-height: 1.25;
+}
+
+.page-heading p {
+    margin: 0;
+    color: #5e6a7c;
+}
+
+.card {
+    margin-bottom: 24px;
+    padding: 28px;
+    background-color: #ffffff;
+    border: 1px solid #dce3ed;
+    border-radius: 12px;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+h3 {
+    margin: 24px 0 12px;
+    font-size: 16px;
+}
+
+p {
+    margin: 0 0 18px;
+}
+
+.hint {
+    margin: 14px 0 0;
+    color: #5e6a7c;
+    font-size: 14px;
+}
+
+.student-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 40px;
+    padding-top: 4px;
+}
+
+.student-details p {
+    margin-bottom: 0;
+}
+
+.note,
+.demo-area,
+.result-panel {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f0f5fc;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.note p {
+    margin: 6px 0 0;
+    font-size: 14px;
+}
+
+pre {
+    padding: 20px;
+    background-color: #f5f7fa;
+    border: 1px solid #dce3ed;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 14px;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th,
+td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #e5eaf1;
+    text-align: left;
+}
+
+thead {
+    background-color: #f5f7fa;
+}
+
+tbody th {
+    font-weight: normal;
+}
+
+.string-result {
+    margin: 20px 0 0;
+}
+
+/* Buttons and inputs use the same styles on every page. */
+button {
+    min-height: 44px;
+    padding: 10px 18px;
+    border: 1px solid #245dc1;
+    border-radius: 6px;
+    background-color: #245dc1;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #194a9d;
+}
+
+.secondary-button,
+.delete-button {
+    background-color: #ffffff;
+    color: #245dc1;
+}
+
+.secondary-button:hover,
+.delete-button:hover {
+    background-color: #eaf1ff;
+}
+
+button:disabled {
+    border-color: #dce3ed;
+    background-color: #edf0f5;
+    color: #687385;
+    cursor: not-allowed;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+#mouse-box:focus-visible {
+    outline: 3px solid #245dc1;
+    outline-offset: 3px;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #bac6d6;
+    border-radius: 6px;
+    color: #253247;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #697587;
+}
+
+.item-list {
+    padding-left: 24px;
+}
+
+.item-list li {
+    padding: 4px 0;
+}
+
+#mouse-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 165px;
+    margin-top: 22px;
+    border-radius: 8px;
+    background-color: #dbeafe;
+    color: #253247;
+    font-size: 20px;
+}
+
+#keyboard-output {
+    margin: 8px 0 0;
+    white-space: pre-wrap;
+}
+
+.input-row {
+    display: flex;
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.input-row > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.calculator-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.calculator-buttons button {
+    flex: 1;
+    font-size: 24px;
+}
+
+.result-panel h3 {
+    margin: 0 0 8px;
+    color: #5e6a7c;
+    font-size: 14px;
+}
+
+#calculator-result {
+    margin: 0;
+    font-size: 22px;
+}
+
+.error {
+    color: #b42318;
+}
+
+.task-entry {
+    display: flex;
+    gap: 10px;
+}
+
+.task-entry button {
+    flex-shrink: 0;
+}
+
+.task-list {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5eaf1;
+}
+
+.task-list label {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.task-list input {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    accent-color: #245dc1;
+}
+
+.task-list span {
+    overflow-wrap: anywhere;
+}
+
+.completed {
+    color: #5e6a7c;
+    text-decoration: line-through;
+}
+
+.empty-state {
+    padding: 30px 12px;
+    color: #5e6a7c;
+    text-align: center;
+}
+
+.storage-note {
+    padding-top: 18px;
+    border-top: 1px solid #e5eaf1;
+}
+
+.next-page {
+    text-align: right;
+    font-size: 14px;
+}
+
+footer {
+    padding: 24px;
+    border-top: 1px solid #dce3ed;
+    color: #5e6a7c;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Stack wider layouts on small screens. */
+@media (max-width: 650px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 18px;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+    }
+
+    main {
+        padding: 30px 16px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .input-row,
+    .task-entry {
+        flex-direction: column;
+    }
+
+    th,
+    td {
+        padding: 10px 4px;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | JavaScript Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a class="site-name" href="index.html">JS Basics<span>Assignment #5</span></a>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Introduction</a>
+                <a href="dom.html">DOM</a>
+                <a href="events.html">Events</a>
+                <a href="calculator.html" aria-current="page">Calculator</a>
+                <a href="todo.html">To-Do List</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-heading">
+            <h1>A Simple Calculator</h1>
+            <p>Two numbers, four operations, and a little JavaScript.</p>
+        </div>
+        <section class="card" aria-labelledby="task-seven">
+            <h2 id="task-seven">Task 7 — Calculator</h2>
+            <p>Enter two numbers, then choose an operation.</p>
+            <div class="input-row">
+                <div>
+                    <label for="first-number">First number</label>
+                    <input id="first-number" type="number" step="any" placeholder="e.g. 12">
+                </div>
+                <div>
+                    <label for="second-number">Second number</label>
+                    <input id="second-number" type="number" step="any" placeholder="e.g. 4">
+                </div>
+            </div>
+            <div class="calculator-buttons">
+                <button id="calculate-add" type="button" aria-label="Add">+</button>
+                <button id="calculate-subtract" type="button" aria-label="Subtract">−</button>
+                <button id="calculate-multiply" type="button" aria-label="Multiply">×</button>
+                <button id="calculate-divide" type="button" aria-label="Divide">÷</button>
+            </div>
+            <div class="result-panel">
+                <h3>Result</h3>
+                <p id="calculator-result" role="status">Your result will appear here.</p>
+            </div>
+            <p class="hint">Decimals and negative numbers are welcome. Division by zero shows an error message.</p>
+        </section>
+        <div class="next-page"><a href="todo.html">Next: To-Do List →</a></div>
+    </main>
+
+    <footer>Assignment #5 · JavaScript Basics · HTML, CSS &amp; JavaScript</footer>
+</body>
+</html>

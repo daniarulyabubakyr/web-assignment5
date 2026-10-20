@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction | JavaScript Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a class="site-name" href="index.html">JS Basics<span>Assignment #5</span></a>
+            <nav aria-label="Main navigation">
+                <a href="index.html" aria-current="page">Introduction</a>
+                <a href="dom.html">DOM</a>
+                <a href="events.html">Events</a>
+                <a href="calculator.html">Calculator</a>
+                <a href="todo.html">To-Do List</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="intro-page">
+        <div class="page-heading">
+            <h1>Introduction to JavaScript</h1>
+            <p>Small experiments with variables, the DOM, and events.</p>
+        </div>
+
+        <section class="card" aria-labelledby="task-zero">
+            <h2 id="task-zero">Task 0 — First Script</h2>
+            <p>This page is connected to <code>script.js</code>. When it loads, JavaScript shows a welcome alert and prints my details in the console.</p>
+            <div class="student-details">
+                <p><strong>Student:</strong> <span id="student-name"></span></p>
+                <p><strong>Group:</strong> <span id="student-group"></span></p>
+            </div>
+            <p class="hint">Replace the name and group at the top of script.js with your own details.</p>
+            <div class="note">
+                <strong>Try it in the browser</strong>
+                <p>Open Developer Tools (F12 or right-click → Inspect), then select the Console tab. Reload this page to see the alert again.</p>
+            </div>
+        </section>
+
+        <section class="card" aria-labelledby="task-one">
+            <h2 id="task-one">Task 1 — Variables &amp; Operators</h2>
+            <p>A string stores text, a number stores a numeric value, and a boolean stores true or false.</p>
+            <pre><code>var greeting = "Hello";
+var firstNumber = 12;
+var secondNumber = 4;
+var isLearning = true;</code></pre>
+            <h3>Arithmetic with 12 and 4</h3>
+            <table>
+                <thead>
+                    <tr><th scope="col">Operation</th><th scope="col">Expression</th><th scope="col">Result</th></tr>
+                </thead>
+                <tbody>
+                    <tr><th scope="row">Addition</th><td>12 + 4</td><td id="addition-result"></td></tr>
+                    <tr><th scope="row">Subtraction</th><td>12 − 4</td><td id="subtraction-result"></td></tr>
+                    <tr><th scope="row">Multiplication</th><td>12 × 4</td><td id="multiplication-result"></td></tr>
+                    <tr><th scope="row">Division</th><td>12 ÷ 4</td><td id="division-result"></td></tr>
+                </tbody>
+            </table>
+            <p class="string-result"><strong>String concatenation:</strong> <span id="joined-strings"></span></p>
+            <p class="hint">These results and the variable values are also printed in the browser console.</p>
+        </section>
+        <div class="next-page"><a href="dom.html">Next: DOM Manipulation →</a></div>
+    </main>
+
+    <footer>Assignment #5 · JavaScript Basics · HTML, CSS &amp; JavaScript</footer>
+</body>
+</html>
